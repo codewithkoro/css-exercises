@@ -7,15 +7,18 @@ body {
   background: pink;
   border: 3px solid blue;
   /* CHANGE ME */
-  padding: 0px;
-  margin: 0px;
+  /* Specified padding to create space between text and border in div 1 and 3 */
+  padding: 32px;
+  /* Specified margin to attach space between div 1 and other elements on the page */
+  margin: 12px;
 }
 
 .two {
   background: lightblue;
   border: 3px solid purple;
   /* CHANGE ME */
-  margin-bottom: 0px;
+  /* Specified a margin between div 2 and 3 by placing a margin-bottom value to div 2 */
+  margin-bottom: 48px;
 }
 
 .three {
@@ -23,6 +26,9 @@ body {
   border: 3px solid brown;
   width: 200px;
   /* CHANGE ME */
-  padding: 0px;
-  margin-left: 0px;
+  margin-top: 0px;
+  /* Specified padding to create space between text and border in div 1 and 3 */
+  padding: 32px;
+  /* Specified margin to align the div 3 right to match the desired image */
+  margin-left: 330px;  /* can also use auto */
 }
