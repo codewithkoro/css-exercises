@@ -12,6 +12,10 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  /* Step 2 */
+  display: flex;  /* make the header a flex container, with .left and .right as flex items */
+  justify-content: space-between;  /* creates maximum space between .left and .right sections (logo/links on left, button/profile on right) */
+  padding: 8px;  /* adds 8px space around all edges per requirements */
 }
 
 .profile-image {
@@ -45,4 +49,16 @@ a {
 
 ul {
   list-style-type: none;
+  /* Step 3 */
+  display: flex;  /* make the ul a flex container so list items take a row display instead of column */
+  margin: 0;   /* remove default ul margin, this interferes with layout */
+  padding: 0;  /* remove default ul padding, this interferes with layout */
+  gap: 16px;  /* add space between each link per requirements */
+}
+
+/* Step 4 */
+.left, .right {
+  display: flex;   /* make each side a flex container for its children */
+  align-items: center;  /* vertically center the children */
+  gap: 16px;  /* add some space between the children on both sides (left & right) */
 }
