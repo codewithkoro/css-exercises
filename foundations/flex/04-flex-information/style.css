@@ -1,5 +1,7 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  /* Step 2: Center Content on the Page */
+  text-align: center;  /* center all content horizontally */
 }
 
 img {
@@ -10,6 +12,8 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  /* Step 3: Add Spacing below the Title */
+  margin-bottom: 32px;  /* creates exactly 32px of space between title and the plant items container */
 }
 
 /* do not edit this footer */
@@ -24,3 +28,16 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* Step 4: Create the Flex Container for Items */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+/* Step 5: Constrain Item Width and Text Wrapping */
+.info {
+  max-width: 200px;
+}
+
